@@ -6,7 +6,7 @@
 
 
 # Latest Ubuntu LTS from stackbrew
-FROM aviatadocker/base
+FROM aviata/base-2
 MAINTAINER jmarsh.ext "jmarsh.ext@aviatainc.com"
 
 # Add Repository
