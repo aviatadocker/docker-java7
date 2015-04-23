@@ -7,7 +7,7 @@
 
 # Latest Ubuntu LTS from stackbrew
 FROM dalekurt/base
-MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
+MAINTAINER jmarsh.ext "jmarsh.ext@aviatainc.com"
 
 # Add Repository
 RUN \
