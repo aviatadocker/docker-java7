@@ -33,8 +33,11 @@ MAINTAINER jmarsh.ext "jmarsh.ext@aviatainc.com"
 
 # Based on dockerfile/java : https://github.com/dockerfile/java/blob/master/oracle-java7/Dockerfile
 
+# NOTE: apt-get install -y software-properties-common && \ should be moved to a shared base image.
+
 # Install Java.
 RUN \
+  apt-get install -y software-properties-common && \
   echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   add-apt-repository -y ppa:webupd8team/java && \
   apt-get update && \
